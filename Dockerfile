@@ -21,6 +21,7 @@ COPY kafka.supervisor.ini /etc/supervisord.d/kafka_broker.ini
 COPY zookeeper.supervisor.ini /etc/supervisord.d/zookeeper_server.ini
 COPY kafka-manager.ini /etc/supervisord.d/kafka-manager.ini
 COPY kafka-generator.ini /etc/supervisord.d/kafka-generator.ini
+RUN rm -rf /root/kafka-manager
 EXPOSE 9000
 
 
